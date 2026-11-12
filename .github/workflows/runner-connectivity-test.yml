@@ -1,0 +1,14 @@
+name: Runner Connectivity Test
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  runner-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm hosted runner allocation
+        run: |
+          echo "GitHub Actions runner allocated successfully"
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Commit: $GITHUB_SHA"
