@@ -1,7 +1,7 @@
 name: Runner Connectivity Test
 on:
   push:
-    branches: [main]
+    branches: ['**']
   workflow_dispatch:
 jobs:
   runner-check:
